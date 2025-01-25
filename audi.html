@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi - Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bgg.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #0072c6;
+        }
+        img {
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Audi - Information</h1>
+    </header>
+    <main>
+        <h2>About Audi</h2>
+        <p>Audi is a German automobile manufacturer that designs, engineers, produces, markets, and distributes luxury vehicles. Known for its precision engineering, high-tech interiors, and performance capabilities.</p>
+        
+        <h2>Main Features</h2>
+        <ul class="features">
+            <li>Quattro all-wheel drive technology.</li>
+            <li>Advanced driver assistance systems.</li>
+            <li>Luxurious interiors and materials.</li>
+            <li>Sporty performance with a sleek design.</li>
+        </ul>
+        
+        <h2>Customer Reviews</h2>
+        <div class="reviews">
+            <ul>
+                <li>"Audi combines luxury with outstanding performance."</li>
+                <li>"I love the sleek design and the driving experience."</li>
+                <li>"A perfect blend of technology and luxury."</li>
+            </ul>
+        </div>
+
+        <h2>Gallery</h2>
+        <a href="#audi1"><img src="images/audi1.jpg" alt="Audi Model 1"></a>
+        <a href="#audi2"><img src="images/audi2.jpg" alt="Audi Model 2"></a>
+        <a href="#audi3"><img src="images/audi3.jpg" alt="Audi Model 3"></a>
+        <a href="#audi4"><img src="images/audi4.jpg" alt="Audi Model 4"></a>
+
+        <!-- Lightbox Section -->
+        <div id="audi1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/audi1.jpg" alt="Audi Model 1">
+        </div>
+        <div id="audi2" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/audi2.jpg" alt="Audi Model 2">
+        </div>
+        <div id="audi3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/audi3.jpg" alt="Audi Model 3">
+        </div>
+        <div id="audi4" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/audi4.jpg" alt="Audi Model 4">
+        </div>
+    </main>
+</body>
+</html>

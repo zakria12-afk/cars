@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini - Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bgg.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #0072c6;
+        }
+        img {
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lamborghini - Information</h1>
+    </header>
+    <main>
+        <h2>About Lamborghini</h2>
+        <p>Lamborghini is an Italian manufacturer of luxury sports cars and SUVs, known for its high-performance vehicles and iconic designs. The brand is synonymous with extreme speed and style.</p>
+        
+        <h2>Main Features</h2>
+        <ul class="features">
+            <li>Unmatched performance and speed.</li>
+            <li>Exotic and aggressive designs.</li>
+            <li>Advanced technologies for driving experience.</li>
+            <li>Handcrafted interiors with the finest materials.</li>
+        </ul>
+        
+        <h2>Customer Reviews</h2>
+        <div class="reviews">
+            <ul>
+                <li>"Lamborghini offers the ultimate performance combined with incredible design."</li>
+                <li>"It’s the dream car of every enthusiast. Pure luxury and speed!"</li>
+                <li>"Unforgettable driving experience. Every ride feels like a race."</li>
+            </ul>
+        </div>
+
+        <h2>Gallery</h2>
+        <a href="#lambo1"><img src="images/lambo1.jpg" alt="Lamborghini Model 1"></a>
+        <a href="#lambo2"><img src="images/lambo2.jpg" alt="Lamborghini Model 2"></a>
+        <a href="#lambo3"><img src="images/lambo3.jpg" alt="Lamborghini Model 3"></a>
+        <a href="#lambo4"><img src="images/lambo4.jpg" alt="Lamborghini Model 4"></a>
+
+        <!-- Lightbox Section -->
+        <div id="lambo1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/lambo1.jpg" alt="Lamborghini Model 1">
+        </div>
+        <div id="lambo2" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/lambo2.jpg" alt="Lamborghini Model 2">
+        </div>
+        <div id="lambo3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/lambo3.jpg" alt="Lamborghini Model 3">
+        </div>
+        <div id="lambo4" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/lambo4.jpg" alt="Lamborghini Model 4">
+        </div>
+    </main>
+</body>
+</html>

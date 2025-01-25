@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford - Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bgg.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #0072c6;
+        }
+        img {
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ford - Information</h1>
+    </header>
+    <main>
+        <h2>About Ford</h2>
+        <p>Ford Motor Company is an American multinational corporation that designs, manufactures, markets, and sells automobiles and commercial vehicles. Known for its strong history, innovation, and contribution to the automotive industry.</p>
+        
+        <h2>Main Features</h2>
+        <ul class="features">
+            <li>Wide range of vehicles, including trucks, SUVs, and electric models.</li>
+            <li>Advanced safety features, including Ford Co-Pilot360.</li>
+            <li>Efficient engines and eco-friendly technologies.</li>
+            <li>Comfortable interiors and durable exteriors.</li>
+        </ul>
+        
+        <h2>Customer Reviews</h2>
+        <div class="reviews">
+            <ul>
+                <li>"Ford trucks are built tough, perfect for work and play!"</li>
+                <li>"Great value for money and the best towing capabilities in class."</li>
+                <li>"I love my Ford SUV; it’s comfortable, reliable, and spacious!"</li>
+            </ul>
+        </div>
+
+        <h2>Gallery</h2>
+        <a href="#ford1"><img src="images/ford1.jpg" alt="Ford Model 1"></a>
+        <a href="#ford2"><img src="images/ford2.jpg" alt="Ford Model 2"></a>
+        <a href="#ford3"><img src="images/ford3.jpg" alt="Ford Model 3"></a>
+        <a href="#ford4"><img src="images/ford4.jpg" alt="Ford Model 4"></a>
+
+        <!-- Lightbox Section -->
+        <div id="ford1" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/ford1.jpg" alt="Ford Model 1">
+        </div>
+        <div id="ford2" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/ford2.jpg" alt="Ford Model 2">
+        </div>
+        <div id="ford3" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/ford3.jpg" alt="Ford Model 3">
+        </div>
+        <div id="ford4" class="lightbox">
+            <a href="#" class="close">&times;</a>
+            <img src="images/ford4.jpg" alt="Ford Model 4">
+        </div>
+    </main>
+</body>
+</html>
